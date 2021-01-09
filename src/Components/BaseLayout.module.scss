@@ -1,0 +1,66 @@
+@import "../variables.modules";
+
+.light {
+  background-color: $white;
+  color: $dark;
+  transition: all 700ms;
+}
+
+.dark {
+  background-color: #1f1b28;
+  color: $white;
+  transition: all 700ms;
+  a,
+  i {
+    color: $white;
+    transition: color 700ms;
+  }
+  i:hover {
+    color: grey;
+  }
+  footer {
+    color: $white;
+  }
+  h2 {
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+
+  & > div div:first-child {
+    background-color: #575e64;
+    i:first-child {
+      color: #ff6057;
+    }
+    i:nth-child(2) {
+      color: #ffbd2e;
+    }
+    i:nth-child(3) {
+      color: #27c93f;
+    }
+  }
+
+  & > div div {
+    background-color: #dee6ee;
+    color: $dark;
+    i {
+      color: slategrey;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 0 1rem 0;
+  opacity: 0.5;
+}

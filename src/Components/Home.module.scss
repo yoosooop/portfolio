@@ -1,0 +1,80 @@
+@import "../variables.modules";
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+  width: 90vw;
+  margin: 1rem auto;
+
+  @media only screen and (min-width: 1025px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 3rem;
+      text-align: left;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 2rem;
+      text-align: left;
+    }
+  }
+
+  ul {
+    padding: 0.8rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .emoji {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    @media only screen and (min-width: 940px) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.avatar {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  padding: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 700ms;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: 940px) {
+    width: 50vh;
+    height: 50vh;
+    margin-right: 3rem;
+    margin-bottom: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.mainImg {
+  border-radius: 50%;
+  width: 100%;
+}

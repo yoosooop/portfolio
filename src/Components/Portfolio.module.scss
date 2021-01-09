@@ -1,0 +1,28 @@
+@import "../variables.modules";
+
+.projectsGrid {
+  display: grid;
+  margin-bottom: 2rem;
+  grid-template-columns: repeat(2, auto);
+
+  img {
+    filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.4));
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  position: relative;
+  left: 120px;
+
+  .image {
+    width: 500px;
+    height: 300px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+}

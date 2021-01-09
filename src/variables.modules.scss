@@ -1,0 +1,22 @@
+$purple: #8d53ff;
+$pink: #ca6be6;
+$white: #f8f8f8;
+$dark: #363636;
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+  width: 90vw;
+  margin: 1rem auto;
+
+  @media only screen and (min-width: 940px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -43,7 +43,7 @@ export default function About() {
       <Carrier
         title="IT 벤처 창업 동아리 SOPT"
         role="웹 파트 / 총무"
-        term="2020.09-Current"
+        term="2020.09-2021.01"
       />
     </main>
   );
